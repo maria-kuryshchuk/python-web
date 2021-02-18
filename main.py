@@ -1,4 +1,5 @@
 import socket
+from datetime import datetime
 
 server = socket.socket(
 
@@ -6,6 +7,7 @@ server = socket.socket(
     socket.SOCK_STREAM,
 
 )
+print('Starting the SERVER at', datetime.now())
 
 server.bind(
     ("127.0.0.1", 1234)  #localhost

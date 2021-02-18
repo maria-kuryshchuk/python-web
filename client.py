@@ -1,5 +1,7 @@
 import socket
+from datetime import datetime
 
+print('Starting the CLIENT at', datetime.now())
 client = socket.socket(
 
     socket.AF_INET,

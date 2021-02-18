@@ -1,0 +1,31 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>Обробка даних із форми</title>
+</head>
+<body>
+
+<form action="cgi-bin/form.py">
+  <label for="fname">First name:</label>
+  <input type="text" name="fname"><br><br>
+  <label for="lname">Last name:</label>
+  <input type="text" name="lname"><br><br>
+  
+    <p>Please choose languages you know:</p>
+  
+<input type="checkbox" name="language" value="Java">Java<br>
+<input type="checkbox" name="language" value="Python">Python<br>
+<input type="checkbox" name="language" value="JavaScript">JavaScript<br>
+<input type="checkbox" name="language" value="C++">C++<br>
+
+
+
+  <p>Please select your gender:</p>
+  <input type="radio" name="gender" value="male">Male<br>
+  <input type="radio" name="gender" value="female">Female<br>
+  
+  <input type="submit" value="Submit">
+  
+</form>
+</body>
+</html>
