@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block container%}
+<table>
+    <thead>
+        <th>Name</th>
+        <th>Available</th>
+        <th>Count</th>
+        <th>Price</th>
+        <th>Description</th>
+        <th>Category</th>
+        <th>Action</th>    
+    </thead>
+
+        {%for product in products%}
+         
+    <tr>
+        <td>{{product.name}}</td>
+        <td>{{product.available}}</td>
+        <td>{{product.count}}</td>
+        <td>{{product.price}}</td>
+        <td>{{product.description}}</td>
+        <td>{{product.category.categoryname}}</td>
+        <td><a href="{{url_for('main.editProduct',id=product.id)}}">EDIT</a></td>
+    </tr>
+       
+       {% endfor %}
+</table>
+{{pagination.links|safe}} 
+{% endblock %}

@@ -1,0 +1,30 @@
+{% extends "foundation_base.html" %}
+{%block head%}
+{% block title %}{% endblock %}
+{{super()}}
+
+{%endblock%}
+{%block body%}
+                {%block header%}
+                {% include 'header.html' %}
+                {%endblock%}
+                {%block nav%}
+                {% include 'menu.html' %}
+                {%endblock%}
+                {%block flashes%}
+                    {% for message in get_flashed_messages()%}
+                    <div class="alert alert-warning">
+                        <button type="button" class="close" data-dismiss="alert">&times;</button>
+                        {{message}}
+                    </div>
+                    {% endfor %}
+                {%endblock%}
+                {%block container%}
+                  ‘Welcome to web Development with Flask!
+                  Oh Yes!’
+                {%endblock%}
+                {%block footer%}
+                {% include 'footer.html' %}
+                {%endblock%}
+{%endblock%}
+

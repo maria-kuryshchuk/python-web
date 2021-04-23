@@ -1,0 +1,49 @@
+{%extends 'base.html'%}
+{%import "foundation_wtf.html" as wtf%}
+{%block container%}
+    <form method="POST" action="" role="form">
+        <div class="grid-container">
+            <div class="grid-x grid-padding-x">
+                <div class="medium-6 cell">
+                    <div class="form-group">{{form.product_name.label}}{{form.product_name()}}</div>
+                </div>
+            </div>
+        </div>
+        <div class="grid-container">
+            <div class="grid-x grid-padding-x">
+                <div class="medium-6 cell">
+                    <div class="form-group">{{form.available.label}}{{form.available()}}</div>
+                </div>
+            </div>
+        </div>
+        <div class="grid-container">
+            <div class="grid-x grid-padding-x">
+                <div class="medium-6 cell">
+                    <div class="form-group">{{form.count_in_storage.label}}{{form.count_in_storage()}}</div>
+                </div>
+            </div>
+        </div>
+        <div class="grid-container">
+            <div class="grid-x grid-padding-x">
+                <div class="medium-6 cell">
+                    <div class="form-group">{{form.price.label}}{{form.price()}}</div>
+                </div>
+            </div>
+        </div>
+        <div class="grid-container">
+            <div class="grid-x grid-padding-x">
+                <div class="medium-6 cell">
+                    <div class="form-group">{{form.description.label}}{{form.description()}}</div>
+                </div>
+            </div>
+        </div>
+        <div class="grid-container">
+            <div class="grid-x grid-padding-x">
+                <div class="medium-6 cell">
+                    <div class="form-group">{{form.category.label}}{{form.category()}}</div>
+                </div>
+            </div>
+        </div>
+        <button type="submit" class="button default">Submit</button>
+    </form>
+{%endblock%}
