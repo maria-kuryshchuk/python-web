@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{%block title%}Home{% endblock %}
+{%block img%}
+    <img class="fon" src="static/portfolio.jpg">
+{% endblock %}
+{%block footer%}
+    <div class="alert-secondary fixed-bottom" role="alert">
+        <b>Operating System:</b>{{my_os}}<br>
+        <b>User Agent:</b>{{user_agent}}<br>
+        <b>Python Version:</b>{{version}}<br>
+        <b>Time:</b>{{time_now}}
+    </div>
+{% endblock %}

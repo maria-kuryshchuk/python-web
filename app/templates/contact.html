@@ -1,0 +1,23 @@
+
+{% extends "base.html" %}
+
+{%block title%}Contact{% endblock %}
+
+{%block menu%}
+    {%for elem in menu%}
+        <a href="{{menu[elem]}}">{{elem}}</a><br>
+    {% endfor %}
+{% endblock %}
+
+{%block about%}
+    <img class="contact_img" src="static/contact.jpeg">
+    <div class="my_contacts">
+        <ul>
+            <li>Facebook: Марія Курищук</li><br>
+            <li>Linkedin: Mariia Kuryshchuk</li><br>
+            <li>Telegram: @m_kuryshchuk</li><br>
+            <li>Phone: +380999999999</li><br>
+            <li>Address: Sukhomlynskogo,2 Ivano-Frankivsk, 76026</li><br>
+        </ul>
+    </div>
+{% endblock %}
